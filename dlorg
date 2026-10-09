@@ -73,7 +73,7 @@ move_file() {
 echo "Dlorg körs - övervakar $DOWNLOADS"
 log "Dlorg startades - övervakar $DOWNLOADS"
 
-inotifywait -m -e create -e moved_to "$DOWNLOADS" --format '%' | while read -r file; do
+inotifywait -m -e create -e moved_to "$DOWNLOADS" --format `%f` | while read -r file; do
     if [ -f "$DOWNLOADS/$file" ]; then 
     move_file "$DOWNLOADS/$file"
 
