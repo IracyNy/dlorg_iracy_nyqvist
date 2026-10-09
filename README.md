@@ -4,9 +4,9 @@ Dlorg är ett bash-script som automatiskt organiserar filer i `~/Downloads`.
 
 ## Funktioner
 - Övervakar Downloads i realtid med `inotifywait`
-- Fyttar filer baserat på filändelse
+- Flyttar filer baserat på filändelse
 - Skapar mappar automatiskt om de saknas
-- loggar till `~/.local/share/dlorg/dlorg.log
+- loggar till `~/.local/share/dlorg/dlorg.log`
 - Kan köras som användartjänst med systemd
 
 ## Mappstruktur
@@ -34,11 +34,11 @@ sudo dnf install inotify-tools
 ```
 
 ## Portabilitet
-Använder `$HOME` istället för hårdkodade sökvägar. Systemd-tjänsten använder `%h`och körs som användartjänst utan root.
+Använder `$HOME` istället för hårdkodade sökvägar. Systemd-tjänsten använder `%h` och körs som användartjänst utan root.
 
 ## Systemd (bonus)
 Se `docs/systemd.md`.
 
 ## LLM-användning
-LLM har använts som bollplank för att förstå `inotifywait`och `case`-satsen. Jag har skrivit och testat all kod själv. 
+LLM har använts som bollplank för att förstå `inotifywait` och `case`-satsen. Jag har skrivit och testat all kod själv. 
 
