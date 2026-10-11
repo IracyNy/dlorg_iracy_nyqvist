@@ -6,7 +6,7 @@ Dlorg är ett bash-script som automatiskt organiserar filer i `~/Downloads`.
 - Övervakar Downloads i realtid med `inotifywait`
 - Flyttar filer baserat på filändelse
 - Skapar mappar automatiskt om de saknas
-- loggar till `~/.local/share/dlorg/dlorg.log`
+- Loggar till `~/.local/share/dlorg/dlorg.log`
 - Kan köras som användartjänst med systemd
 
 ## Mappstruktur
