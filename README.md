@@ -37,7 +37,10 @@ sudo dnf install inotify-tools
 Använder `$HOME` istället för hårdkodade sökvägar. Systemd-tjänsten använder `%h` och körs som användartjänst utan root.
 
 ## Systemd (bonus)
-Se `docs/systemd.md`.
+Dlorg kan köras som en användartjänst med systemd. Se:
+
+- [`docs/systemd.md`](docs/systemd.md) – fullständig dokumentation
+- [`docs/dlorg.service`](docs/dlorg.service) – unit-filen
 
 ## LLM-användning
 LLM har använts som bollplank för att förstå `inotifywait` och `case`-satsen. Jag har skrivit och testat all kod själv. 
