@@ -1,0 +1,12 @@
+[Unit]
+Description=Dlorg Downloads Organizer
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/Documents/github/dlorg_iracy_nyqvist/dlorg
+Restart=always
+
+[Install]
+WantedBy=default.target
+
